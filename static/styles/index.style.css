@@ -1,0 +1,93 @@
+body {
+
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* App Bar styling */
+.navbar {
+    background-color: #ffffff;
+    /* White background */
+    color: #6b38ff;
+    /* Purple text color */
+}
+
+.navbar-brand,
+.nav-link {
+    color: #6b38ff !important;
+    /* Purple text color */
+}
+
+/* Override Bootstrap button styles */
+.btn-primary {
+    background-color: #6b38ff;
+    /* Purple background color */
+    border-color: #6b38ff;
+    /* Purple border color */
+}
+
+.btn-primary:hover {
+    background-color: #512bd4;
+    /* Darker shade of purple on hover */
+    border-color: #512bd4;
+    /* Darker shade of purple on hover */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    /* Red background color */
+    border-color: #dc3545;
+    /* Red border color */
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    /* Darker shade of red on hover */
+    border-color: #c82333;
+    /* Darker shade of red on hover */
+}
+
+/* Video container styles (optional) */
+#video-container {
+
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin: 150px 300px 10px 300px;
+    border: 1px dotted #aaa;
+    /* Dotted border */
+    border-radius: 1rem;
+    /* Rounded corners */
+    background-color: #f9f9f9;
+    /* Light gray background */
+    cursor: pointer;
+    /* Change cursor to pointer */
+}
+
+#video-feed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+#topBody {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.video-feed-img {
+    right: 0;
+    border-radius: 2rem;
+    object-fit: fill;
+    margin-top: 240px;
+    width: 600px;
+    height: 600px;
+}
