@@ -1,4 +1,4 @@
-<img width="809" alt="Screenshot 2024-05-01 at 9 36 07 PM" src="https://github.com/Amman30/exercise/assets/81242678/010b3e4b-383f-4306-bf0f-8ef741144554">
+
 ## About the project
 This project utilizes Flask and MediaPipe to create a web application that analyzes various exercises performed by users using real-time pose detection. It includes functionalities such as counting repetitions and providing feedback on exercise form.
 <h2>Developed By</h2>
