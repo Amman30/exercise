@@ -4,7 +4,7 @@ This project utilizes Flask and MediaPipe to create a web application that analy
 <h2>Developed By</h2>
 
 - [Mohammad Amman](https://www.linkedin.com/in/mohammad-amman/)
-- [Zaid Dento](https://www.linkedin.com/in/zaid-dento/)
+- [Zaid Dento](https://www.linkedin.com/in/zaid-dento-7b05a3220/)
 
 
 
