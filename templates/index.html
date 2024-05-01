@@ -76,24 +76,59 @@
                 <p style="text-align: center; font-size: 2rem; color: #fff; background-color: #6b38ff; border-radius: 1rem; width: 600px; margin: auto; padding: 1rem;"> Check your form here! </p>
              </div>
                 <div id="video-container">
-                    <img id="video-feed" src="../static/assets/camera.jpeg" style="height: 400px;" alt="Placeholder for Camera Feed">
+                    <h2>Bicep Curl</h2>
+                    <img id="bicep-feed" src="../static/assets/camera.jpeg" style="height: 400px;" alt="Placeholder for Camera Feed">
+                    
                 </div>
-                <button onclick="startCamera()" class="btn btn-primary">Open Camera</button>
-                <button onclick="stopCamera()" class="btn btn-danger">Close Camera</button>
+                <button onclick="startCameraBicep()" class="btn btn-primary">Open Camera</button>
+                    <button onclick="stopCameraBicep()" class="btn btn-danger">Close Camera</button>
+                <div id="video-container">
+                    <h2>Should Press</h2>
+                    <img id="shoulder-feed" src="../static/assets/camera.jpeg" style="height: 400px;" alt="Placeholder for Camera Feed">
+                  
+                </div>
+                <button onclick="startCameraShoulder()" class="btn btn-primary">Open Camera</button>
+                <button onclick="stopCameraShoulder()" class="btn btn-danger">Close Camera</button> <div id="video-container">
+                    <h2>Lateral Raises</h2>
+                    <img id="lateral-feed" src="../static/assets/camera.jpeg" style="height: 400px;" alt="Placeholder for Camera Feed">
+              
+                </div>
+                <button onclick="startCameraLateralRaises()" class="btn btn-primary">Open Camera</button>
+                <button onclick="stopCameraLateralRaises()" class="btn btn-danger">Close Camera</button>
             </div>
+            
         </div>
     </div>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         
-        function startCamera() {
-            document.getElementById('video-feed').src = "{{ url_for('video_feed') }}";
+        function startCameraLateralRaises() {
+            document.getElementById('lateral-feed').src = "{{ url_for('LateralRaisesRoute') }}";
             document.getElementById('placeholder-overlay').style.display = "none";
         }
 
-        function stopCamera() {
-            document.getElementById('video-feed').src = "../static/assets/camera.jpeg";
+        function stopCameraLateralRaises() {
+            document.getElementById('lateral-feed').src = "../static/assets/camera.jpeg";
+            document.getElementById('placeholder-overlay').style.display = "dotted";
+        }
+        function startCameraBicep() {
+            document.getElementById('bicep-feed').src = "{{ url_for('curlCounterRoute') }}";
+            document.getElementById('placeholder-overlay').style.display = "none";
+        }
+
+        function stopCameraBicep() {
+            document.getElementById('bicep-feed').src = "../static/assets/camera.jpeg";
+            document.getElementById('placeholder-overlay').style.display = "dotted";
+        }
+        function startCameraShoulder() {
+            document.getElementById('shoulder-feed').src = "{{ url_for('shouldPressRoute') }}";
+            document.getElementById('placeholder-overlay').style.display = "none";
+        }
+
+        function stopCameraShoulder() {
+            document.getElementById('shoulder-feed').src = "../static/assets/camera.jpeg";
             document.getElementById('placeholder-overlay').style.display = "dotted";
         }
     </script>
